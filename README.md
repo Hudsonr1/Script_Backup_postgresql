@@ -13,15 +13,15 @@ Excluir o bancoParaTestar
 <pre>su - postgres </pre>
 
 Realizar Backup do banco de dados
-<pre>psql -c dropdb $teste </pre>
+<pre>psql -c dropdb $testar </pre>
 
 Criar banco teste e restaurando Backup do banco de dados.</pre>
 <pre>pg_dump -h localhost -p 5432 -U postgres -v -f "/backup/$data.dbserver.sql" 
 
-<pre>psql -c createdb $teste</pre>
+<pre>psql -c createdb $testar</pre>
 
 Compactar o Backup do banco de dados
-<pre>pg_restore -U $usuario -h $host -d $teste /backup/$data.dbserver.sql</pre>
+<pre>pg_restore -U $usuario -h $host -d $testar /backup/$data.dbserver.sql</pre>
  
 Apagar arquivos
 <pre>tar -zcf /backup/compactado/$data.dbserversql.tar /backup/$data.dbserver.sql </pre>
