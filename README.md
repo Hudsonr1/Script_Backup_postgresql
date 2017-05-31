@@ -16,7 +16,7 @@ su - postgres
 Realizar Backup do banco de dados
 psql -c dropdb $testar 
 
-Criar banco teste e restaurando Backup do banco de dados.</pre>
+Criar banco teste e restaurando Backup do banco de dados.
 pg_dump -h localhost -p 5432 -U postgres -v -f "/backup/$data.dbserver.sql" 
 
 psql -c createdb $testar
