@@ -5,7 +5,7 @@ Iniciando o codigo
 use um editor de texto VIM ou GEDIT
 
 <pre>
-#!/bin/bash<
+#!/bin/bash
 
 Conectando ao banco de dados
 data=date "+%Y%m%d-%H:%M" usuario=postgres host=localhost banco=postgre senha=1234 restaurar=postgre testar= bancoParaTestar 
